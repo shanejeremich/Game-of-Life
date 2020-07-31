@@ -1,29 +1,16 @@
+// /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useCallback, useRef } from "react";
-import "./Grid.css";
 import produce from "immer";
-import Buttons from "../buttons/Buttons";
-import { gridContainer } from "../../theme/theme";
+import "./Buttons.css"
+import {
+    Button
+    // Dropdown,
+    // DropdownButton
+} from "react-bootstrap";
 import { operations } from "../grid/operations/operations";
 
-// Initialize Grid
-const rows = 25;
-const cols = 25;
-const InitializeGrid = () => {
-    const arr = [];
-    // create number of rows equal to our const rows variable
-    for (let i = 0; i < rows; i++) {
-        // push a copy of Array equal to const cols variable, set values to all 0
-        arr.push(Array.from(Array(cols), () => 0));
-    }
-    return arr;
-};
-
-function Grid({ setGeneration }) {
+function Buttons({ setGrid, InitializeGrid, rows, cols, setGeneration }) {
     const [play, setPlay] = useState(false);
-    const [grid, setGrid] = useState(() => {
-        return InitializeGrid();
-    });
-
     const playRef = useRef(play);
     playRef.current = play;
 
@@ -75,46 +62,59 @@ function Grid({ setGeneration }) {
         });
 
         setTimeout(start, 100);
-    }, [setGeneration]);
+    }, [setGrid, cols, rows, setGeneration]);
 
     return (
-        <div>
-            <div style={gridContainer}>
-                {grid.map((rows, i) =>
-                    rows.map((none, j) => (
-                        <div
-                            className="cell"
-                            key={`${i}-${j}`}
-                            onClick={() => {
-                                // produce makes a mutable change and creates a new grid
-                                const newGrid = produce(grid, gridCopy => {
-                                    // each cell toggle - If cell is dead make it alive otheriwse make it alive
-                                    gridCopy[i][j] = grid[i][j] ? 0 : 1;
-                                });
-                                setGrid(newGrid);
-                            }}
-                            style={{
-                                backgroundColor: grid[i][j]
-                                    ? "black"
-                                    : undefined
-                            }}
-                        />
-                    ))
-                )}
-            </div>
-            <Buttons
-                setPlay={setPlay}
-                play={play}
-                playRef={playRef}
-                start={start}
-                setGrid={setGrid}
-                InitializeGrid={InitializeGrid}
-                rows={rows}
-                cols={cols}
-                setGeneration={setGeneration}
-            />
+        <div className="buttons-container">
+            {/* Play Button */}
+            <Button
+                variant="outline-secondary"
+                size="lg"
+                onClick={() => {
+                    // toggle playing and stop Button
+                    setPlay(!play);
+                    if (!play) {
+                        playRef.current = true;
+                        start();
+                    }
+                }}
+            >
+                {play ? "Stop" : "Play"}
+            </Button>
+
+            {/* Clear Button */}
+            <Button
+                variant="outline-secondary"
+                size="lg"
+                onClick={() => {
+                    setGrid(InitializeGrid());
+                    setPlay(false);
+                    setGeneration(0);
+                }}
+            >
+                Clear
+            </Button>
+
+            {/* Random Button */}
+            <Button
+                variant="outline-secondary"
+                size="lg"
+                onClick={() => {
+                    const arr = [];
+                    for (let i = 0; i < rows; i++) {
+                        arr.push(
+                            Array.from(Array(cols), () =>
+                                Math.random() > 0.6 ? 1 : 0
+                            )
+                        );
+                    }
+                    setGrid(arr);
+                }}
+            >
+                Random
+            </Button>
         </div>
     );
 }
 
-export default Grid;
+export default Buttons;
