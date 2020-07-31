@@ -5,3 +5,7 @@
     justify-content: space-evenly;
     margin: 2% auto;
 }
+
+.presets-container img {
+    border: 1px solid black;
+}
