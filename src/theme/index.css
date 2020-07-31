@@ -22,3 +22,15 @@ button {
     width: 100px;
     height: 50px;
 }
+
+a {
+    color: black;
+}
+
+a:hover _{
+    color: gray
+}
+
+a:visited {
+    color: gray
+}

@@ -34,6 +34,7 @@ function App() {
                     behaviors are better described by rules at these higher
                     levels.
                 </p>
+                <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="blank">Conway's Game of Life Wikipedia</a>
             </div>
         </>
     );
