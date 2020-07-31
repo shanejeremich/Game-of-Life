@@ -1,11 +1,7 @@
 // /* eslint-disable react-hooks/exhaustive-deps */
 import React from "react";
 import "./Buttons.css";
-import {
-    Button
-    // Dropdown,
-    // DropdownButton
-} from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 function Buttons({
     setPlay,
@@ -20,7 +16,6 @@ function Buttons({
 }) {
     return (
         <div className="buttons-container">
-            {/* Play Button */}
             <Button
                 variant="outline-secondary"
                 size="lg"
@@ -36,7 +31,6 @@ function Buttons({
                 {play ? "Stop" : "Play"}
             </Button>
 
-            {/* Clear Button */}
             <Button
                 variant="outline-secondary"
                 size="lg"
@@ -49,7 +43,6 @@ function Buttons({
                 Clear
             </Button>
 
-            {/* Random Button */}
             <Button
                 variant="outline-secondary"
                 size="lg"

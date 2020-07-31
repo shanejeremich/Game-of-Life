@@ -1,5 +1,6 @@
-.buttons-container {
+.presets-container {
     display: flex;
+    flex-direction: column;
     width: 50%;
     justify-content: space-evenly;
     margin: 2% auto;

@@ -1,20 +1,22 @@
-.center {
+.game-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: auto;
 }
 
-button {
-    width: 100px;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(25, 20px);
 }
 
-.cell {
+.grid-item {
     border: 1px solid black;
     width: 20px;
     height: 20px;
 }
-.cell:hover {
+
+.grid-item:hover {
     background-color: pink;
 }

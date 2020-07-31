@@ -1,0 +1,28 @@
+/* * {
+    border: 1px solid green;
+} */
+
+body {
+    width: 90%;
+    margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: black;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    margin-top: 10px;
+}
+
+h4 {
+    margin-top: 0px;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+}

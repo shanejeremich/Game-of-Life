@@ -1,0 +1,7 @@
+.preset-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 1% auto;
+}
