@@ -3,6 +3,7 @@ import "./Grid.css";
 import produce from "immer";
 import Buttons from "../buttons/Buttons";
 import Presets from "../presets/Presets";
+import Rules from '../rules/Rules'
 import { operations } from "../grid/operations/operations";
 
 /**
@@ -236,6 +237,7 @@ function Grid() {
                 InitializeGrid={InitializeGrid}
                 setGridPreset={setGridPreset}
             />
+            <Rules />
         </>
     );
 }

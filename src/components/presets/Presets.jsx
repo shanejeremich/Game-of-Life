@@ -10,6 +10,7 @@ import toadImg from "../img/toad.gif"
 const Presets = ({ setGridPreset }) => {
     return (
         <div className="presets-container">
+        <h2>Presets:</h2>
             <Preset name="Beacon" setGridPreset={setGridPreset} img={beaconImg} />
             <Preset name="Glider" setGridPreset={setGridPreset} img={gliderImg} />
             <Preset name="Pulsar" setGridPreset={setGridPreset} img={pulsarImg} />
