@@ -5,8 +5,3 @@
     justify-content: space-evenly;
     margin: 2% auto;
 }
-
-.dropdown {
-    display: flex;
-    justify-content: center;
-}

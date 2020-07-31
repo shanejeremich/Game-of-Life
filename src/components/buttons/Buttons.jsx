@@ -61,7 +61,7 @@ function Buttons({
             >
                 Random
             </Button>
-            <Dropdown className="dropdown">
+            <Dropdown className="drop">
                 <Dropdown.Toggle variant="outline-secondary" size="lg">
                     Speed
                 </Dropdown.Toggle>
