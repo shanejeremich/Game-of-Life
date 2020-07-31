@@ -28,8 +28,9 @@ a {
     color: black;
 }
 
-a:hover _ {
+a:hover {
     color: gray;
+    text-decoration: none;
 }
 
 a:visited {
