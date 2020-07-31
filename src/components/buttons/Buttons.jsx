@@ -1,7 +1,7 @@
 // /* eslint-disable react-hooks/exhaustive-deps */
 import React from "react";
 import "./Buttons.css";
-import { Button } from "react-bootstrap";
+import { Button, Dropdown } from "react-bootstrap";
 
 function Buttons({
     setPlay,
@@ -12,7 +12,8 @@ function Buttons({
     InitializeGrid,
     rows,
     cols,
-    setGeneration
+    setGeneration,
+    setSpeed
 }) {
     return (
         <div className="buttons-container">
@@ -60,6 +61,35 @@ function Buttons({
             >
                 Random
             </Button>
+            <Dropdown className="dropdown">
+                <Dropdown.Toggle variant="outline-secondary" size="lg">
+                    Speed
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                    <Dropdown.Item
+                        onClick={() => {
+                            setSpeed(1000);
+                        }}
+                    >
+                        Slow
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                        onClick={() => {
+                            setSpeed(100);
+                        }}
+                    >
+                        Medium
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                        onClick={() => {
+                            setSpeed(50);
+                        }}
+                    >
+                        Fast
+                    </Dropdown.Item>
+                </Dropdown.Menu>
+            </Dropdown>
         </div>
     );
 }

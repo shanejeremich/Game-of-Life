@@ -1,6 +1,5 @@
 import React from "react";
 import "./Presets.css";
-import { Dropdown } from "react-bootstrap";
 import Preset from "./Preset/Preset";
 
 import beaconImg from "../img/beacon.gif";
@@ -28,35 +27,6 @@ const Presets = ({ setGridPreset, setSpeed }) => {
                 img={pulsarImg}
             />
             <Preset name="Toad" setGridPreset={setGridPreset} img={toadImg} />
-            <Dropdown className="dropdown">
-                <Dropdown.Toggle variant="outline-secondary" size="lg">
-                    Speed
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                    <Dropdown.Item
-                        onClick={() => {
-                            setSpeed(1000);
-                        }}
-                    >
-                        Slow
-                    </Dropdown.Item>
-                    <Dropdown.Item
-                        onClick={() => {
-                            setSpeed(100);
-                        }}
-                    >
-                        Medium
-                    </Dropdown.Item>
-                    <Dropdown.Item
-                        onClick={() => {
-                            setSpeed(50);
-                        }}
-                    >
-                        Fast
-                    </Dropdown.Item>
-                </Dropdown.Menu>
-            </Dropdown>
         </div>
     );
 };

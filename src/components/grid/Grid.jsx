@@ -90,7 +90,7 @@ function Grid() {
         });
 
         setTimeout(start, speedRef.current);
-    }, [speed, setGeneration]);
+    }, [setGeneration]);
 
     /**
      * Grid Presets
@@ -243,12 +243,12 @@ function Grid() {
                     rows={rows}
                     cols={cols}
                     setGeneration={setGeneration}
+                    setSpeed={setSpeed}
                 />
             </div>
             <Presets
                 InitializeGrid={InitializeGrid}
                 setGridPreset={setGridPreset}
-                setSpeed={setSpeed}
             />
             <Rules />
         </>
