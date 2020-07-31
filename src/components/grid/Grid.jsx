@@ -3,7 +3,7 @@ import "./Grid.css";
 import produce from "immer";
 import Buttons from "../buttons/Buttons";
 import Presets from "../presets/Presets";
-import Rules from '../rules/Rules'
+import Rules from "../rules/Rules";
 import { operations } from "../grid/operations/operations";
 
 /**
@@ -25,6 +25,9 @@ const InitializeGrid = () => {
 function Grid() {
     const [generation, setGeneration] = useState(0);
     const [play, setPlay] = useState(false);
+    const [speed, setSpeed] = useState(100);
+    const speedRef = useRef(speed);
+    speedRef.current = speed;
     const [grid, setGrid] = useState(() => {
         return InitializeGrid();
     });
@@ -32,6 +35,11 @@ function Grid() {
     const playRef = useRef(play);
     playRef.current = play;
 
+    console.log("speed", speed);
+
+    /**
+     * Start/Run Game of Life
+     */
     // Use Callback function so this doesnt change and not be rerendered
     const start = useCallback(() => {
         // If not playing stop
@@ -81,8 +89,12 @@ function Grid() {
             return next;
         });
 
-        setTimeout(start, 100);
-    }, [setGeneration]);
+        setTimeout(start, speedRef.current);
+    }, [speed, setGeneration]);
+
+    /**
+     * Grid Presets
+     */
 
     const setGridPreset = preset => {
         let grid = InitializeGrid();
@@ -111,72 +123,72 @@ function Grid() {
                 grid[6][9] = 1;
                 grid[6][10] = 1;
                 grid[6][11] = 1;
-                
+
                 grid[6][15] = 1;
                 grid[6][16] = 1;
                 grid[6][17] = 1;
-                
+
                 grid[8][7] = 1;
                 grid[9][7] = 1;
                 grid[10][7] = 1;
-                
+
                 grid[8][12] = 1;
                 grid[9][12] = 1;
                 grid[10][12] = 1;
-                
+
                 grid[8][14] = 1;
                 grid[9][14] = 1;
                 grid[10][14] = 1;
-                
+
                 grid[8][19] = 1;
                 grid[9][19] = 1;
                 grid[10][19] = 1;
-                
+
                 grid[11][9] = 1;
                 grid[11][10] = 1;
                 grid[11][11] = 1;
-                
+
                 grid[11][9] = 1;
                 grid[11][10] = 1;
                 grid[11][11] = 1;
-                
+
                 grid[11][15] = 1;
                 grid[11][16] = 1;
                 grid[11][17] = 1;
-                
+
                 grid[13][9] = 1;
                 grid[13][10] = 1;
                 grid[13][11] = 1;
-                
+
                 grid[13][15] = 1;
                 grid[13][16] = 1;
                 grid[13][17] = 1;
-                
+
                 grid[14][7] = 1;
                 grid[15][7] = 1;
                 grid[16][7] = 1;
-                
+
                 grid[14][12] = 1;
                 grid[15][12] = 1;
                 grid[16][12] = 1;
-                
+
                 grid[14][14] = 1;
                 grid[15][14] = 1;
                 grid[16][14] = 1;
-                
+
                 grid[14][19] = 1;
                 grid[15][19] = 1;
                 grid[16][19] = 1;
-                
+
                 grid[18][9] = 1;
                 grid[18][10] = 1;
                 grid[18][11] = 1;
-                
+
                 grid[18][15] = 1;
                 grid[18][16] = 1;
                 grid[18][17] = 1;
                 break;
-                
+
             case "Toad":
                 grid[6][9] = 1;
                 grid[6][10] = 1;
@@ -236,6 +248,7 @@ function Grid() {
             <Presets
                 InitializeGrid={InitializeGrid}
                 setGridPreset={setGridPreset}
+                setSpeed={setSpeed}
             />
             <Rules />
         </>

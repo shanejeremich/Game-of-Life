@@ -5,11 +5,13 @@ import Grid from "./components/grid/Grid";
 function App() {
     return (
         <>
-            <h1>Conway's Game of Life</h1>
+            <h1>
+                <strong>Conway's Game of Life</strong>
+            </h1>
             <div className="middle-row">
                 <Grid />
             </div>
-            <div>
+            <div className="about">
                 <h2>About this Algorithm:</h2>
                 <p>
                     The Game of Life (sometimes known simply as Life) is an
