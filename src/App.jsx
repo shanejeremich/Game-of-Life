@@ -11,7 +11,7 @@ function App() {
             <div className="middle-row">
                 <Grid />
             </div>
-            <div className="about">
+            <div>
                 <h2>About this Algorithm:</h2>
                 <p>
                     The Game of Life (sometimes known simply as Life) is an
@@ -34,7 +34,12 @@ function App() {
                     behaviors are better described by rules at these higher
                     levels.
                 </p>
-                <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="blank">Conway's Game of Life Wikipedia</a>
+                <a
+                    href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
+                    target="blank"
+                >
+                    Conway's Game of Life Wikipedia
+                </a>
             </div>
         </>
     );

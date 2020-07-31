@@ -3,6 +3,10 @@
     /* flex-direction: column; */
     width: 40%;
     justify-content: space-evenly;
-    margin: 2% 0 0 auto;
+    margin: 2% 0 0 0;
     padding: 0 3% 0% 3%;
+}
+
+.rules-container ul {
+    margin: 0 auto;
 }
