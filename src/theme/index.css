@@ -1,7 +1,3 @@
-* {
-    border: 1px solid green;
-}
-
 body {
     width: 90%;
     margin: auto;
@@ -32,10 +28,10 @@ a {
     color: black;
 }
 
-a:hover _{
-    color: gray
+a:hover _ {
+    color: gray;
 }
 
 a:visited {
-    color: gray
+    color: gray;
 }
