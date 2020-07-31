@@ -1,12 +1,17 @@
 import React from "react";
 import { Button, Figure } from "react-bootstrap";
-import "./Preset.css"
+import "./Preset.css";
 
 const Preset = ({ setGridPreset, name, img }) => {
     return (
         <div className="preset-container">
             <Figure>
-                <Figure.Image src={img} height={100} width={100} />
+                <Figure.Image
+                    src={img}
+                    height={100}
+                    width={100}
+                    onClick={() => setGridPreset(name)}
+                />
             </Figure>
             <Button
                 onClick={() => setGridPreset(name)}
