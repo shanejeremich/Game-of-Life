@@ -5,7 +5,7 @@ function Rules() {
     return (
         <div className="rules-container">
             <div>
-                <h2>Rules</h2>
+                <h2>Rules:</h2>
                 <p>
                     The universe of the Game of Life is an infinite,
                     two-dimensional orthogonal grid of square cells, each of
