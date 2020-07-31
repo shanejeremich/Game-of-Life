@@ -1,0 +1,6 @@
+.buttons-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 2% auto;
+}

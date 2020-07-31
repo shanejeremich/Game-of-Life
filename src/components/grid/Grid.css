@@ -1,0 +1,20 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+button {
+    width: 100px;
+}
+
+.cell {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+.cell:hover {
+    background-color: pink;
+}

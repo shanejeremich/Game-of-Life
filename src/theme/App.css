@@ -1,0 +1,11 @@
+/* * {
+    border: 1px solid green;
+} */
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
