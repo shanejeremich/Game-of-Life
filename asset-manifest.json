@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Game-of-Life/static/css/main.af6a30cd.chunk.css",
-    "main.js": "/Game-of-Life/static/js/main.33760579.chunk.js",
-    "main.js.map": "/Game-of-Life/static/js/main.33760579.chunk.js.map",
+    "main.js": "/Game-of-Life/static/js/main.181db76c.chunk.js",
+    "main.js.map": "/Game-of-Life/static/js/main.181db76c.chunk.js.map",
     "runtime-main.js": "/Game-of-Life/static/js/runtime-main.f46c60ba.js",
     "runtime-main.js.map": "/Game-of-Life/static/js/runtime-main.f46c60ba.js.map",
     "static/js/2.83816486.chunk.js": "/Game-of-Life/static/js/2.83816486.chunk.js",
     "static/js/2.83816486.chunk.js.map": "/Game-of-Life/static/js/2.83816486.chunk.js.map",
     "index.html": "/Game-of-Life/index.html",
-    "precache-manifest.7ce595de80c8f94289dce5eee29de17e.js": "/Game-of-Life/precache-manifest.7ce595de80c8f94289dce5eee29de17e.js",
+    "precache-manifest.b12e16586b8311f867cd6ab2ae1c9188.js": "/Game-of-Life/precache-manifest.b12e16586b8311f867cd6ab2ae1c9188.js",
     "service-worker.js": "/Game-of-Life/service-worker.js",
     "static/css/main.af6a30cd.chunk.css.map": "/Game-of-Life/static/css/main.af6a30cd.chunk.css.map",
     "static/js/2.83816486.chunk.js.LICENSE.txt": "/Game-of-Life/static/js/2.83816486.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f46c60ba.js",
     "static/js/2.83816486.chunk.js",
     "static/css/main.af6a30cd.chunk.css",
-    "static/js/main.33760579.chunk.js"
+    "static/js/main.181db76c.chunk.js"
   ]
 }
