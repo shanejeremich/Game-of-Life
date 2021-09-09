@@ -31,11 +31,8 @@ function Grid() {
     const [grid, setGrid] = useState(() => {
         return InitializeGrid();
     });
-    console.log(grid);
     const playRef = useRef(play);
     playRef.current = play;
-
-    console.log("speed", speed);
 
     /**
      * Start/Run Game of Life

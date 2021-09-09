@@ -4,6 +4,8 @@ https://sjeremich23.github.io/Game-of-Life/
 
 ![Game of Life](/public/images/screenshot.jpg)
 
+## Overview
+
 This was my project for Lambda School's Computer Science course build week 1. This project is a cellular automaton devised by John Horton Conway in 1970. It takes place on an infinite two-dimensional grid in which cells can be ‘on’ (alive) or ‘off’ (dead), and is defined by a set of rules that jointly determine the state of a cell given the state of its neighbours. Following specification of an initial configuration, patterns evolve over time across the grid requiring no further user input.
 
 ## Contributors
