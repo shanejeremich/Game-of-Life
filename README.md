@@ -14,8 +14,6 @@ This was my project for Lambda School's Computer Science course build week 1. Th
 
 ## Contributors
 
-<br>
-
 |                                        [Shane Jeremich](https://github.com/sjeremich23)                                        |
 | :----------------------------------------------------------------------------------------------------------------------------: |
 |                     [<img src="public/images/shane.png" width = "200" />](https://github.com/sjeremich23)                      |
