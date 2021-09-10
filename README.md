@@ -25,7 +25,7 @@ This was my project for Lambda School's Computer Science course build week 1. Th
 ![React](https://img.shields.io/badge/react-v16.13.1-blue.svg)
 ![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)
 
-### Key Features
+## Key Features
 
 - Grid to display the Game of Life
 - Popular presets to try out (Beacon, Glider, Pulsar, Toad)
