@@ -10,6 +10,8 @@ This was my project for Lambda School's Computer Science course build week 1. Th
 
 ![Game of Life](/public/images/screenshot.jpg)
 
+<br>
+
 ## Contributors
 
 <br>
