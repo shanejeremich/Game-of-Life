@@ -34,7 +34,7 @@ This was my project for Lambda School's Computer Science course build week 1. Th
 - Popular presets to try out (Beacon, Glider, Pulsar, Toad)
 - Options to Play, Clear, Random (Turns random cells to 'on'), Speed (Change the speed of the game)
 
-#### Front end deployed to `GitHub Pages`
+### Front end deployed to `GitHub Pages`
 
 [Game of Life](https://sjeremich23.github.io/Game-of-Life/)
 
