@@ -1,6 +1,6 @@
 # Game of Life
 
-You can find the deployed project at [Game of Life](https://sjeremich23.github.io/Game-of-Life/)
+You can find the deployed project at [Game of Life](https://shanejeremich.github.io/Game-of-Life/)
 
 ## Overview
 
